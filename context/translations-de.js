@@ -1,12 +1,14 @@
 const DE = {
   role: 'Frontend Developer · React / Next.js / Karten',
   status: 'Offen für Remote-Arbeit',
-  lede: `Frontend Developer mit <strong>4+ Jahren</strong> Erfahrung in der Entwicklung produktiver
-    React- und TypeScript-Webanwendungen – nach dem Wechsel in die Softwareentwicklung aus einer
-    früheren Laufbahn im Lehrberuf. Von mehrsprachigen, CMS-gesteuerten Unternehmenswebsites bis hin zu
-    komplexen <strong>kartenbasierten Echtzeit-Monitoring-Plattformen</strong> – bei PantoHealth verantworte ich
-    die gesamte Google-Maps-Integrationsschicht, habe das Heatmap-Rendering mit WebGL neu aufgebaut und
-    9+ Monitoring-Dashboards von Grund auf erstellt.`,
+  lede: `Frontend Developer mit <strong>4+ Jahren</strong> Erfahrung in der Entwicklung produktiver React- und
+    TypeScript-Webanwendungen – nach dem Wechsel in die Softwareentwicklung aus einer früheren Laufbahn im Lehrberuf.
+    Meine Erfahrung reicht von mehrsprachigen Unternehmenswebsites mit CMS-gesteuerten Inhalten und wiederverwendbaren
+    Komponentenbibliotheken bis hin zu komplexen <strong>kartenbasierten Echtzeit-Monitoring-Plattformen</strong>.
+    Bei PantoHealth verantworte ich die gesamte Google-Maps-Integrationsschicht, habe das Heatmap-Rendering mit WebGL
+    neu aufgebaut und 9+ Monitoring-Dashboards von Grund auf erstellt – dazu Refactorings, die tausende Zeilen
+    duplizierten Codes entfernt haben. Sicher in UI-Entwicklung, Performance-Optimierung, wiederverwendbarer
+    Architektur und State Management in agilen Remote-Teams.`,
   lang_en: 'Englisch <b>Fließend (C2)</b>',
   lang_de: 'Deutsch <b>Mittelstufe (B1)</b>',
   lang_fa: 'Persisch <b>Muttersprache</b>',
