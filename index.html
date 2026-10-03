@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samira Kian — Front-End Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;800;900&family=Overpass+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- animated railway network -->
+<svg id="network" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <path id="r1" class="route coral" d="M -60 700 L 240 700 L 420 520 L 780 520 L 980 320 L 1520 320"/>
+  <path id="r2" class="route amber" d="M -60 180 L 320 180 L 520 380 L 940 380 L 1140 580 L 1520 580"/>
+  <path id="r3" class="route teal"  d="M 200 960 L 200 640 L 400 440 L 400 220 L 620 0"/>
+  <path id="r4" class="route teal"  d="M 1520 120 L 1180 120 L 1000 300 L 1000 640 L 820 820 L 300 820"/>
+  <!-- interchange nodes -->
+  <circle class="node" cx="420" cy="520" r="6" stroke="#ef5b5b"/>
+  <circle class="node" cx="980" cy="320" r="6" stroke="#ef5b5b"/>
+  <circle class="node" cx="520" cy="380" r="6" stroke="#ffb627"/>
+  <circle class="node" cx="1140" cy="580" r="6" stroke="#ffb627"/>
+  <circle class="node" cx="400" cy="440" r="6" stroke="#17bebb"/>
+  <circle class="node" cx="1000" cy="640" r="6" stroke="#17bebb"/>
+  <!-- trains -->
+  <circle class="train" r="5" fill="#ef5b5b" data-route="#r1" data-dur="26"/>
+  <circle class="train" r="5" fill="#ffb627" data-route="#r2" data-dur="32"/>
+  <circle class="train" r="4" fill="#17bebb" data-route="#r3" data-dur="22"/>
+  <circle class="train" r="4" fill="#17bebb" data-route="#r4" data-dur="30"/>
+</svg>
+<div class="vignette"></div>
+
+<div class="stage">
+  <header>
+    <div class="brand">
+      <div class="name">Samira <em>Kian</em></div>
+      <div data-i18n="role" class="role">Frontend Developer · React / Next.js / Maps</div>
+    </div>
+    <div class="hdr-right">
+      <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language to German" title="Deutsch">DE</button>
+      <div data-i18n="status" class="status">Open to work</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" aria-live="polite">
+      <div class="card-head">
+        <span class="stop-code" id="stopCode">ST-01</span>
+        <h2 id="panelTitle">About</h2>
+      </div>
+      <div class="panel-wrap">
+
+        <div class="panel" id="panel-about" role="tabpanel">
+          <div class="about-top">
+            <div class="avatar-wrap">
+              <img class="avatar" src="./img/01.jpg" alt="Samira Kian">
+            </div>
+            <p data-i18n="lede" class="lede">
+              Front-end developer with <strong>4+ years</strong> building production React and
+              TypeScript web applications, after moving into software development from an earlier
+              career in teaching. From multilingual, CMS-driven corporate websites to complex
+              <strong>map-based and real-time monitoring platforms</strong> — at PantoHealth I own the
+              full Google Maps integration layer, rebuilt heatmap rendering with WebGL and created
+              9+ monitoring dashboards from scratch.
+            </p>
+          </div>
+          <div class="meta-row">
+            <!-- <span>Base <b>Remote (UTC+3:30)</b></span> -->
+            <span data-i18n="lang_en">English <b>Fluent (C2)</b></span>
+            <span data-i18n="lang_de">German <b>Intermediate (B1)</b></span>
+            <span data-i18n="lang_fa">Persian <b>Native</b></span>
+          </div>
+          <div class="meta-row" style="margin-top:10px">
+            <span data-i18n="edu_ma">Education <b>M.A. English Language Teaching — Islamic Azad University, 2011–2016</b></span>
+            <span data-i18n="edu_ba"><b>B.A. English Literature — Jahad Daneshgahi University, 2006–2011</b></span>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-experience" role="tabpanel" hidden>
+          <ul class="xp">
+            <li class="clickable" data-modal="x-panto" tabindex="0" role="button">
+              <h3 data-i18n="x1_h">PantoHealth GmbH <span>— Frontend Developer</span></h3>
+              <div data-i18n="x1_w" class="when">JUL 2024 → PRESENT · GERMANY · REMOTE</div>
+              <p data-i18n="x1_p">Own the full Google Maps integration layer of a railway-infrastructure monitoring platform (custom markers, geocoding, marker rotation, Street View, satellite mode) across 50+ merged PRs. Rebuilt the heatmap from Google Maps overlays to deck.gl (WebGL) with lazy-loaded modules; led the React Router v5 → v6 migration across 30+ files with zero regressions; built a reusable background-polling system and viewport-based marker virtualization used on 5 pages; created 9+ monitoring dashboards from scratch; and led a chart unification refactor that removed ~2,100 lines of duplicated code. 300+ contributions shipped.</p>
+            <span data-i18n="more" class="more">View details →</span></li>
+            <li class="clickable" data-modal="x-lo-web" tabindex="0" role="button">
+              <h3 data-i18n="x2_h">Lo Agency <span>— Frontend Web Developer</span></h3>
+              <div data-i18n="x2_w" class="when">NOV 2022 → JUN 2024</div>
+              <p data-i18n="x2_p"><b>Sahar Food:</b> independently shipped 15+ pages and features in Next.js 13 and TypeScript with English, Persian and Russian support, full RTL, a Swiper/GSAP hero slider, shared SEO module and Jalali calendar (33 merged PRs). <b>Zargroup:</b> built 7+ CMS-backed pages with Next.js, REST/GraphQL and Strapi, bilingual i18n/RTL, and rebuilt the homepage into dynamic CMS-driven sections (60+ commits in a team of 10+).</p>
+            <span data-i18n="more" class="more">View details →</span></li>
+            <li class="clickable" data-modal="x-lo-intern" tabindex="0" role="button">
+              <h3 data-i18n="x3_h">Lo Agency <span>— Frontend Developer Intern</span></h3>
+              <div data-i18n="x3_w" class="when">APR 2022 → SEP 2022</div>
+              <p data-i18n="x3_p">Built responsive UI components with React, HTML, CSS and JavaScript; took part in code reviews, testing and debugging.</p>
+            <span data-i18n="more" class="more">View details →</span></li>
+            <li class="clickable" data-modal="x-selftaught" tabindex="0" role="button">
+              <h3 data-i18n="x4_h">Self-Taught Frontend Development <span>— Career transition</span></h3>
+              <div data-i18n="x4_w" class="when">2020 → 2022</div>
+              <p data-i18n="x4_p">Spent 1.5–2 years learning HTML, CSS, JavaScript, React and modern tooling through online courses and personal projects.</p>
+            <span data-i18n="more" class="more">View details →</span></li>
+            <li class="clickable" data-modal="x-teacher" tabindex="0" role="button">
+              <h3 data-i18n="x5_h">Kalame Mehr Language Institute <span>— English Language Teacher</span></h3>
+              <div data-i18n="x5_w" class="when">2016 → 2020 · IN-PERSON &amp; ONLINE</div>
+              <p data-i18n="x5_p">Taught English to learners of all ages and levels — building fluent professional English and strong habits in clear explanation, feedback and mentoring.</p>
+            <span data-i18n="more" class="more">View details →</span></li>
+          </ul>
+        </div>
+
+        <div class="panel" id="panel-skills" role="tabpanel" hidden>
+          <div class="skill-group" style="--gc:var(--line-coral)">
+            <h3 data-i18n="sk_core">Core</h3>
+            <div class="chips"><span>JavaScript (ES6+)</span><span>TypeScript</span><span>React 18</span><span>Next.js</span><span>Vite</span><span>HTML5</span><span>CSS3</span></div>
+          </div>
+          <div class="skill-group" style="--gc:var(--line-coral)">
+            <h3 data-i18n="sk_ui">UI & Styling</h3>
+            <div class="chips"><span>Tailwind CSS</span><span>Chakra UI</span><span>styled-components</span><span>Bootstrap</span><span>Sass</span><span data-i18n="chip_resp">Responsive / Mobile-first</span></div>
+          </div>
+          <div class="skill-group" style="--gc:var(--line-amber)">
+            <h3 data-i18n="sk_state">State & Data</h3>
+            <div class="chips"><span>Zustand</span><span>Redux</span><span>TanStack React Query</span><span>React Hook Form</span><span>Formik / Yup</span><span>REST APIs</span><span>Axios</span></div>
+          </div>
+          <div class="skill-group" style="--gc:var(--line-amber)">
+            <h3 data-i18n="sk_maps">Maps & Visualization</h3>
+            <div class="chips"><span>Google Maps JS API</span><span>deck.gl (WebGL)</span><span>Recharts</span><span data-i18n="chip_chart">Chart component architecture</span></div>
+          </div>
+          <div class="skill-group" style="--gc:var(--line-teal)">
+            <h3 data-i18n="sk_tools">Tools & Practices</h3>
+            <div class="chips"><span>Git / GitHub</span><span>Sentry</span><span>Playwright (E2E)</span><span>Jest</span><span data-i18n="chip_bundle">Bundle-size reduction</span><span data-i18n="chip_xbrowser">Cross-browser compatibility</span><span data-i18n="chip_agile">Agile / Scrum</span></div>
+          </div>
+          <div class="skill-group" style="--gc:var(--line-teal)">
+            <h3 data-i18n="sk_other">Other</h3>
+            <div class="chips"><span>i18next</span><span>jsPDF / SheetJS</span><span>date-fns</span><span>Claude Code</span><span>Codex</span></div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-certificates" role="tabpanel" hidden>
+          <div class="proj">
+            <h3>React (Advanced): Formik, Yup, Jest</h3>
+            <div class="tech">META / COURSERA · 2023</div>
+          </div>
+          <div class="proj">
+            <h3>HTML, CSS &amp; JavaScript for Web Developers</h3>
+            <div class="tech">COURSERA · 2023</div>
+          </div>
+          <div class="proj">
+            <h3>React.js</h3>
+            <div class="tech">SHECODES · 2023</div>
+          </div>
+          <div class="proj">
+            <h3>Web Development &amp; Responsive Design</h3>
+            <div class="tech">SHECODES · 2023</div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-projects" role="tabpanel" hidden>
+          <div class="proj clickable" data-modal="p-panto" tabindex="0" role="button">
+            <h3 data-i18n="p1_h">Railway monitoring platform — PantoHealth</h3>
+            <div class="tech">GOOGLE MAPS JS API · DECK.GL · REACT · TYPESCRIPT</div>
+            <p data-i18n="p1_p">Google Maps integration layer, WebGL heatmap rebuilt on deck.gl, viewport-based marker virtualization and 9+ monitoring dashboards (CPU, RAM, Disk, GPS Health, Event Score and more) with PDF/Excel export and Sentry session-replay.</p>
+          <span data-i18n="more" class="more">View details →</span></div>
+          <div class="proj clickable" data-modal="p-sahar" tabindex="0" role="button">
+            <h3 data-i18n="p2_h">Sahar Food — Corporate website</h3>
+            <div class="tech">NEXT.JS 13 · TYPESCRIPT · SWIPER · GSAP</div>
+            <p data-i18n="p2_p">15+ pages shipped independently in English, Persian and Russian with full RTL layout, reusable UI components, shared SEO module and Jalali calendar support.</p>
+          <span data-i18n="more" class="more">View details →</span></div>
+          <div class="proj clickable" data-modal="p-zar" tabindex="0" role="button">
+            <h3 data-i18n="p3_h">Zargroup — Corporate website</h3>
+            <div class="tech">NEXT.JS · TYPESCRIPT · REST/GRAPHQL · STRAPI</div>
+            <p data-i18n="p3_p">CMS-backed bilingual (Persian/English) pages and a dynamic, CMS-driven homepage with modals, carousels and parallax. Live at <a href="https://zargroup.ir" target="_blank" rel="noopener">zargroup.ir</a>.</p>
+          <span data-i18n="more" class="more">View details →</span></div>
+          <div class="proj clickable" data-modal="p-workout" tabindex="0" role="button">
+            <h3 data-i18n="p4_h">Workout Tracker — Internship project</h3>
+            <div class="tech">NODE.JS · EXPRESS · TWIG.JS · ALPINE.JS · SQLITE</div>
+            <p data-i18n="p4_p">Team project from the Lo Agency internship: users register, plan workouts with due dates and follow daily and weekly statistics.</p>
+          <span data-i18n="more" class="more">View details →</span></div>
+          <div class="proj clickable" data-modal="p-kerio" tabindex="0" role="button">
+            <h3 data-i18n="p5_h">Kerio — Internship project</h3>
+            <div class="tech">REACT · TYPESCRIPT · TAILWIND · NESTJS · POSTGRESQL</div>
+            <p data-i18n="p5_p">Full-stack team project from the Lo Agency internship: a React/TypeScript frontend with a NestJS and PostgreSQL backend, built through a pull-request workflow.</p>
+          <span data-i18n="more" class="more">View details →</span></div>
+        </div>
+
+        <div class="panel" id="panel-contact" role="tabpanel" hidden>
+          <ul class="contact-list">
+            <li><a href="mailto:samira.kian01@gmail.com"><span class="k" data-i18n="c_email">Email</span><span class="v">samira.kian01@gmail.com</span></a></li>
+            <li><a href="tel:+989376410696"><span class="k" data-i18n="c_phone">Phone</span><span class="v">(+98) 937 641 0696</span></a></li>
+            <li><a href="https://www.linkedin.com/in/samira--kian/" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span class="v">/in/samira--kian</span></a></li>
+            <li><a href="https://github.com/samikia" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">github.com/samikia</span></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <nav aria-label="Sections">
+    <div class="linebar" role="tablist">
+      <button class="station" role="tab" data-target="about" data-code="ST-01" aria-selected="true"><span class="dot"></span><span data-i18n="nav_about">About</span></button>
+      <button class="station" role="tab" data-target="experience" data-code="ST-02" aria-selected="false"><span class="dot"></span><span data-i18n="nav_experience">Experience</span></button>
+      <button class="station" role="tab" data-target="skills" data-code="ST-03" aria-selected="false"><span class="dot"></span><span data-i18n="nav_skills">Skills</span></button>
+      <button class="station" role="tab" data-target="certificates" data-code="ST-04" aria-selected="false"><span class="dot"></span><span data-i18n="nav_certificates">Certificates</span></button>
+      <button class="station" role="tab" data-target="projects" data-code="ST-05" aria-selected="false"><span class="dot"></span><span data-i18n="nav_projects">Projects</span></button>
+      <button class="station" role="tab" data-target="contact" data-code="ST-06" aria-selected="false"><span class="dot"></span><span data-i18n="nav_contact">Contact</span></button>
+    </div>
+  </nav>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
