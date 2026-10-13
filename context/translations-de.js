@@ -1,6 +1,6 @@
 const DE = {
   role: 'Frontend Developer · React / Next.js / Karten',
-  status: 'Offen für Remote-Arbeit',
+  status: 'Offen für Arbeit',
   lede: `Frontend Developer mit <strong>4+ Jahren</strong> Erfahrung in der Entwicklung produktiver React- und
     TypeScript-Webanwendungen – nach dem Wechsel in die Softwareentwicklung aus einer früheren Laufbahn im Lehrberuf.
     Meine Erfahrung reicht von mehrsprachigen Unternehmenswebsites mit CMS-gesteuerten Inhalten und wiederverwendbaren
@@ -28,7 +28,7 @@ const DE = {
   x4_w: '2020 → 2022',
   x4_p: '1,5–2 Jahre lang HTML, CSS, JavaScript, React und moderne Tools über Online-Kurse und eigene Projekte gelernt.',
   x5_h: 'Kalame Mehr Language Institute <span>— Englischlehrer</span>',
-  x5_w: '2016 → 2020 · VOR ORT &amp; ONLINE',
+  x5_w: '2016 → 2022 · VOR ORT &amp; ONLINE',
   x5_p: 'Englisch für Lernende aller Altersgruppen und Niveaus unterrichtet – dabei fließendes Berufsenglisch und Routine im klaren Erklären, Feedbackgeben und Mentoring aufgebaut.',
   more: 'Details ansehen →',
 
