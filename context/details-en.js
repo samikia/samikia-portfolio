@@ -1,12 +1,12 @@
 const DETAILS = {
   'x-panto': {
-    title: 'PantoHealth GmbH', sub: 'Frontend Developer', when: 'JUL 2024 → PRESENT · GERMANY · REMOTE',
-    intro: 'Frontend developer on a railway-infrastructure monitoring platform, working in an Agile remote team with ownership of the maps layer and a large share of the monitoring dashboards.',
+    title: 'PantoHealth GmbH', sub: 'Frontend Developer', when: 'JUL 2024 → OCT 2026 · GERMANY · REMOTE',
+    intro: 'Worked as a frontend developer on a railway-infrastructure monitoring platform in an Agile remote team, owning the maps layer and a large share of the monitoring dashboards.',
     points: [
       'Owned the full Google Maps integration layer (Point Detail, Calendar & Trips, Catenary Points): custom markers, geocoding, marker rotation, Street View and satellite mode, across 50+ merged PRs.',
       'Designed the heatmap feature from scratch, then rebuilt its rendering by moving from Google Maps overlays to deck.gl (WebGL) with lazy-loaded modules, improving performance on large datasets and cutting bundle size.',
       'Led the full migration from React Router v5 to v6 across 30+ files with zero regressions to auth redirects or route guards.',
-      'Built a reusable background-polling system with progress tracking and cancellation, and added viewport-based virtualization for map markers and polylines, now used across 5 monitoring pages.',
+      'Built a reusable background-polling system with progress tracking and cancellation, and added viewport-based virtualization for map markers and polylines, used across 5 monitoring pages.',
       'Created 9+ end-to-end monitoring dashboards from scratch (CPU, RAM, Disk, Device Uptime, GPS Health, Video Profiling, Server Monitoring, Heatmap, Event Score), covering UI, filtering, charting and REST API integration.',
       'Led a chart-component unification refactor that removed about 2,100 lines of duplicated code across 19 files with no loss of features.',
       'Built the User & Asset Intelligence dashboard with visit tracking, PDF/Excel export and Sentry session-replay.',
@@ -35,10 +35,10 @@ const DETAILS = {
     tech: ['React', 'HTML', 'CSS', 'JavaScript']
   },
   'x-selftaught': {
-    title: 'Self-Taught Frontend Development', sub: 'Career transition', when: '2020 → 2022',
-    intro: 'Moved from teaching into software development through roughly 1.5 to 2 years of self-study.',
+    title: 'Self-Taught Frontend Development', sub: 'Alongside teaching', when: '2020 → 2022',
+    intro: 'Self-study alongside teaching: online courses, tutorials and personal projects, progressing from HTML, CSS and JavaScript to React and modern tooling.',
     points: [
-      'Learned through online tutorials, starting with the fundamentals (HTML, CSS and JavaScript) and moving on to React and modern tooling.',
+      'Learned through online courses and tutorials, starting with the fundamentals (HTML, CSS and JavaScript) and moving on to React and modern tooling.',
       'Built personal projects along the way before taking a first professional role.'
     ],
     tech: ['HTML', 'CSS', 'JavaScript', 'React']

@@ -1,12 +1,12 @@
 const DETAILS_DE = {
   'x-panto': {
-    sub: 'Frontend Developer', when: 'JUL 2024 → HEUTE · DEUTSCHLAND · REMOTE',
-    intro: 'Frontend Developer an einer Monitoring-Plattform für Bahninfrastruktur – in einem agilen Remote-Team, mit Verantwortung für die Kartenschicht und einen großen Teil der Monitoring-Dashboards.',
+    sub: 'Frontend Developer', when: 'JUL 2024 → OKT 2026 · DEUTSCHLAND · REMOTE',
+    intro: 'Arbeitete als Frontend Developer an einer Monitoring-Plattform für Bahninfrastruktur in einem agilen Remote-Team und verantwortete die Kartenschicht sowie einen großen Teil der Monitoring-Dashboards.',
     points: [
       'Gesamte Google-Maps-Integrationsschicht verantwortet (Point Detail, Calendar & Trips, Catenary Points): eigene Marker, Geocoding, Marker-Rotation, Street View und Satellitenansicht in 50+ gemergten PRs.',
       'Heatmap-Feature von Grund auf entworfen und das Rendering anschließend von Google-Maps-Overlays auf deck.gl (WebGL) mit Lazy-Loading umgestellt – bessere Performance bei großen Datensätzen und kleineres Bundle.',
       'Vollständige Migration von React Router v5 auf v6 über 30+ Dateien geleitet, ohne Regressionen bei Auth-Redirects oder Route Guards.',
-      'Wiederverwendbares Hintergrund-Polling mit Fortschrittsanzeige und Abbruch gebaut sowie viewportbasierte Virtualisierung für Marker und Polylinien ergänzt – inzwischen auf 5 Monitoring-Seiten im Einsatz.',
+      'Wiederverwendbares Hintergrund-Polling mit Fortschrittsanzeige und Abbruch gebaut sowie viewportbasierte Virtualisierung für Marker und Polylinien ergänzt, im Einsatz auf 5 Monitoring-Seiten.',
       '9+ End-to-End-Monitoring-Dashboards von Grund auf erstellt (CPU, RAM, Disk, Device Uptime, GPS Health, Video Profiling, Server Monitoring, Heatmap, Event Score) – inklusive UI, Filter, Charts und REST-API-Anbindung.',
       'Vereinheitlichung der Chart-Komponenten geleitet: ca. 2.100 Zeilen duplizierten Code in 19 Dateien entfernt, ohne Funktionsverlust.',
       'User & Asset Intelligence Dashboard mit Besuchserfassung, PDF/Excel-Export und Sentry Session Replay gebaut.',
@@ -32,10 +32,10 @@ const DETAILS_DE = {
     ]
   },
   'x-selftaught': {
-    title: 'Autodidaktische Frontend-Entwicklung', sub: 'Berufswechsel', when: '2020 → 2022',
-    intro: 'Mit rund 1,5 bis 2 Jahren Selbststudium vom Lehrberuf in die Softwareentwicklung gewechselt.',
+    title: 'Autodidaktische Frontend-Entwicklung', sub: 'Berufsbegleitend', when: '2020 → 2022',
+    intro: 'Selbststudium neben der Lehrtätigkeit: Online-Kurse, Tutorials und eigene Projekte, von HTML, CSS und JavaScript bis zu React und modernem Tooling.',
     points: [
-      'Über Online-Tutorials gelernt – zuerst die Grundlagen (HTML, CSS und JavaScript), dann React und moderne Tools.',
+      'Über Online-Kurse und Tutorials gelernt, zuerst die Grundlagen (HTML, CSS und JavaScript), dann React und moderne Tools.',
       'Nebenbei eigene Projekte gebaut, bevor die erste berufliche Stelle folgte.'
     ]
   },

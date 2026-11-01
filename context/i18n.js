@@ -1,5 +1,7 @@
 const i18nEls = [...document.querySelectorAll('[data-i18n]')];
 i18nEls.forEach(el => { el.dataset.en = el.innerHTML; });
+const hrefEls = [...document.querySelectorAll('[data-href-de]')];
+hrefEls.forEach(el => { el.dataset.hrefEn = el.getAttribute('href'); });
 const langBtn = document.getElementById('langBtn');
 let lang = 'en';
 try { lang = localStorage.getItem('lang') === 'de' ? 'de' : 'en'; } catch (e) {}
@@ -11,6 +13,7 @@ function applyLang(l) {
     const k = el.dataset.i18n;
     el.innerHTML = l === 'de' && DE[k] !== undefined ? DE[k] : el.dataset.en;
   });
+  hrefEls.forEach(el => el.setAttribute('href', l === 'de' ? el.dataset.hrefDe : el.dataset.hrefEn));
   document.documentElement.lang = l;
   document.title = ui.title;
   langBtn.textContent = l === 'de' ? 'EN' : 'DE';
